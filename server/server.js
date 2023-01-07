@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/", express.static(__dirname + "/"));
 app.use(
   cors({
-    origin: ["https://bathroomsmtl.onrender.com"],
+    origin: ["https://bathroomsmontreal.onrender.com"],
   })
 );
 app.use(express.static("./server/assets"));
