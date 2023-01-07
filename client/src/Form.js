@@ -11,7 +11,7 @@ const Form = ({ handleChange, setFormData, formData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.name && formData.lng && formData.lat) {
-      fetch(`/add-bathroom`, {
+      fetch(`${process.env.REACT_APP_BACKEND_URL}/add-bathroom`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
