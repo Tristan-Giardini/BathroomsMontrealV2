@@ -1,4 +1,4 @@
-import ReactMapBox, { Marker, GeolocateControl } from "react-map-gl";
+import ReactMapBox, { Marker, GeolocateControl } from "react-map-gl"; // eslint-disable-next-line import/no-webpack-loader-syntax
 import styled from "styled-components";
 import toilet from "./assets/toilet.png";
 import { useState, useEffect } from "react";
