@@ -4,7 +4,6 @@ import toilet from "./assets/toilet.png";
 import { useState, useEffect } from "react";
 import PopupComponent from "./PopupComponent";
 import gendered from "./assets/gendered.png";
-const washrooms = require("./assets/info");
 
 const MapContainer = ({ handleChange, setFormData, formData }) => {
   const [selectedBathroom, setSelectedBathroom] = useState(null);
@@ -47,6 +46,7 @@ const MapContainer = ({ handleChange, setFormData, formData }) => {
   return (
     <StyledBox>
       <ReactMapBox
+        className="mapboxgl-canvas"
         mapboxAccessToken="pk.eyJ1IjoiYWxsdGhlcmlnaHRoeXBlIiwiYSI6ImNsYm55cXMyeTBhYnYzcG1xazVsanpiZGUifQ.1qBx_PT7xzE-ryPmmsSTlA"
         initialViewState={{
           longitude: -73.585016,
