@@ -1,5 +1,8 @@
 import ReactMapBox, { Marker, GeolocateControl } from "react-map-gl";
 // eslint-disable-next-line import/no-webpack-loader-syntax
+// @ts-ignore
+mapboxgl.workerClass =
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 import styled from "styled-components";
 import toilet from "./assets/toilet.png";
 import { useState, useEffect } from "react";
