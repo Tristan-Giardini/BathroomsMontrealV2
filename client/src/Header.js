@@ -36,7 +36,9 @@ const StyledHeader = styled.div`
   @media (max-width: 390px) {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
+    div {
+      font-size: 5%;
+    }
     img {
       width: 10px;
     }
