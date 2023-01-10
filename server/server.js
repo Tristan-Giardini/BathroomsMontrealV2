@@ -23,6 +23,8 @@ app.use(function (req, res, next) {
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
+  // addition to see if works in firefox
+  res.header("Access-Control-Allow-Origin", "*");
   next();
 });
 app.use(express.json());
@@ -33,7 +35,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/", express.static(__dirname + "/"));
 app.use(
   cors({
-    origin: ["https://bathroomsmontreal.onrender.com"],
+    origin: [
+      "https://bathroomsmontreal.onrender.com/",
+      "https://www.bathroomsmtl.ca/",
+    ],
   })
 );
 app.use(express.static("./server/assets"));
