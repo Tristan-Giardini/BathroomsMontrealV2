@@ -40,9 +40,11 @@ const StyledHeader = styled.div`
   @media (max-width: 390px) {
     width: 100%;
     display: flex;
-
+    div {
+      font-size: 5%;
+    }
     img {
-      width: 10px;
+      width: 10%;
     }
   }
 `;

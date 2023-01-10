@@ -106,7 +106,7 @@ const Form = ({ handleChange, setFormData, formData }) => {
           <p></p>
           <h2>Contact us</h2>
           <p>
-            For more information about this project and to notify us of a change<a href="/contact">here</a>
+            For more information about this project and to notify us of a change click <a href="/contact">here</a>
           </p>
         </form>
       </FormDiv>
