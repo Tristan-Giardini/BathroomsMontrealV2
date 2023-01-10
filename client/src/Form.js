@@ -37,8 +37,6 @@ const Form = ({ handleChange, setFormData, formData }) => {
     }
   };
 
-  console.log(formData);
-
   return (
     <>
       <FormDiv>
