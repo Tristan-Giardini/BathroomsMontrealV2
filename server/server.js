@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/", express.static(__dirname + "/"));
 app.use(
   cors({
-    origin: ["*"],
+    origin: "http://216.24.57.1",
   })
 );
 app.use(express.static("./server/assets"));
