@@ -8,15 +8,18 @@ const Header = () => {
   return (
     <StyledHeader>
       <HomeNav to="/">Bathrooms MTL</HomeNav>
+
       <img src={gendered} alt="This icon indicates a gendered washroom" />
-      <div>Gendered washroom</div>
+      <div>Gendered</div>
+
       <img src={toilet} alt="This icon indicates a gender neutral washroom" />
-      <div>Gender neutral washroom</div>
+      <div>Gender neutral</div>
+
       <img
         src={disabled}
         alt="This icon indicates a wheelchair accessible washroom"
       />
-      <div>Accessible washroom</div>
+      <div>Accessible</div>
     </StyledHeader>
   );
 };
@@ -24,11 +27,12 @@ const Header = () => {
 const StyledHeader = styled.div`
   width: 100%;
   height: 85px;
-  background-color: gray;
+  background-color: #eefbfd;
+  border-bottom: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px;
+  padding: 4px 10% 0 10%;
   img {
     width: 35px;
     margin: 10px;
@@ -36,26 +40,18 @@ const StyledHeader = styled.div`
   @media (max-width: 390px) {
     width: 100%;
     display: flex;
-    div {
-      font-size: 5%;
-    }
+
     img {
       width: 10px;
     }
   }
 `;
-
 const HomeNav = styled(NavLink)`
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
   color: black;
+  margin-right: 10px;
 `;
-// const Types = styled.div`
-//   div {
-//     display: flex;
-//     flex-direction: row;
-//     font-size: 60%;
-//     align-items: center;
-//   }
-// `;
 
 export default Header;
