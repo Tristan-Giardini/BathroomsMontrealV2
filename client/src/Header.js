@@ -41,10 +41,10 @@ const StyledHeader = styled.div`
     width: 100%;
     display: flex;
     div {
-      font-size: 5%;
+      font-size: 10%;
     }
     img {
-      width: 10%;
+      width: 8%;
     }
   }
 `;
