@@ -37,6 +37,9 @@ const StyledHeader = styled.div`
     width: 35px;
     margin: 10px;
   }
+  @media (max-width: 470px) {
+    font-size: 75%;
+  }
   @media (max-width: 390px) {
     width: 100%;
     display: flex;
@@ -54,6 +57,15 @@ const HomeNav = styled(NavLink)`
   font-size: 1.2rem;
   color: black;
   margin-right: 10px;
+  @media (max-width: 790px) {
+    font-size: 80%;
+  }
+  @media (max-width: 470px) {
+    font-size: 15%;
+  }
+  @media (max-width: 390px) {
+    font-size: 10%;
+  }
 `;
 
 export default Header;
