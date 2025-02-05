@@ -38,6 +38,7 @@ app.use(
     origin: [
       "https://bathroomsmontreal.onrender.com/",
       "https://www.bathroomsmtl.ca/",
+      "https://bathrooms-montreal-v2-server-56w9wvake.vercel.app/",
     ],
   })
 );
